@@ -1,4 +1,4 @@
-## ellipsoidMoments
+# ellipsoidMoments
 
 In MatLAB, first create a test image, which is a random ellipsoid in a binary 200 x 200 matrix.  The ellipsoid will have random position, angle, size, and eccentricity
 
@@ -10,10 +10,22 @@ Next use the image moments method to determine the centroid (x0,y0), the rotatio
 
 This will also produce a figure where the original binary image is shown as yellow on a blue background, with the calculated centroid and ellipse outline shown in red.
 
-# Sample output
+## Code options
+
+To create a non-random fixed ellipsoid with no rotation angle, use
+
+> binaryImage = testDroplet(0);
+
+## Sample output
 
 > [x0 y0 theta a b]' =
 
 >  116.9409   89.8130    0.6382   28.4511   18.5487
 
 ![Figure Output for above parameters](sample_ellipsoid.png)
+
+## Code Options
+
+To create a non-random fixed ellipsoid with no rotation angle, use
+
+> binaryImage = testDroplet(0);
